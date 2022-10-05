@@ -21,7 +21,6 @@ for (let i = 0; i < 8; i++) {
 function position() {
     document.getElementById("searchbutton").style.display = "none"
 
-    //location.reload();
 
     let i = document.querySelector('input').value;
 
