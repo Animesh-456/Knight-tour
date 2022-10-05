@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Knight Position Finder</title>
+    <meta charset="UTF-8">
+    <style>
+        .chess-board {
+            border-spacing: 0;
+            border-collapse: collapse;
+        }
+
+        .chess-board th {
+            padding: .5em;
+        }
+
+        .chess-board td {
+            border: 1px solid;
+            width: 3em;
+            height: 3em;
+        }
+
+        .chess-board .light {
+            background: #eee;
+        }
+
+        .chess-board .dark {
+            background: #000;
+            color: #eee;
+        }
+    </style>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+
+<body>
+    
+    <div class="container">
+        <br>
+        <br>
+        <br>
+        <table class="chess-board">
+            <tbody>
+                <tr>
+
+                    <td class="light" id="00">00</td>
+                    <td class="dark" id="01">01</td>
+                    <td class="light" id="02">02</td>
+                    <td class="dark" id="03">03</td>
+                    <td class="light" id="04">04</td>
+                    <td class="dark" id="05">05</td>
+                    <td class="light" id="06">06</td>
+                    <td class="dark" id="07">07</td>
+                </tr>
+                <tr>
+
+                    <td class="dark" id="10">10</td>
+                    <td class="light" id="11">11</td>
+                    <td class="dark" id="12">12</td>
+                    <td class="light" id="13">13</td>
+                    <td class="dark" id="14">14</td>
+                    <td class="light" id="15">15</td>
+                    <td class="dark" id="16">16</td>
+                    <td class="light" id="17">17</td>
+                </tr>
+                <tr>
+
+                    <td class="light" id="20">20</td>
+                    <td class="dark" id="21">21</td>
+                    <td class="light" id="22">22</td>
+                    <td class="dark" id="23">23</td>
+                    <td class="light" id="24">24</td>
+                    <td class="dark" id="25">25</td>
+                    <td class="light" id="26">26</td>
+                    <td class="dark" id="27">27</td>
+                </tr>
+                <tr>
+
+                    <td class="dark" id="30">30</td>
+                    <td class="light" id="31">31</td>
+                    <td class="dark" id="32">32</td>
+                    <td class="light" id="33">33</td>
+                    <td class="dark" id="34">34</td>
+                    <td class="light" id="35">35</td>
+                    <td class="dark" id="36">36</td>
+                    <td class="light" id="37">37</td>
+                </tr>
+                <tr>
+
+                    <td class="light" id="40">40</td>
+                    <td class="dark" id="41">41</td>
+                    <td class="light" id="42">42</td>
+                    <td class="dark" id="43">43</td>
+                    <td class="light" id="44">44</td>
+                    <td class="dark" id="45">45</td>
+                    <td class="light" id="46">46</td>
+                    <td class="dark" id="47">47</td>
+                </tr>
+                <tr>
+
+                    <td class="dark" id="50">50</td>
+                    <td class="light" id="51">51</td>
+                    <td class="dark" id="52">52</td>
+                    <td class="light" id="53">53</td>
+                    <td class="dark" id="54">54</td>
+                    <td class="light" id="55">55</td>
+                    <td class="dark" id="56">56</td>
+                    <td class="light" id="57">57</td>
+                </tr>
+                <tr>
+
+                    <td class="light" id="60">60</td>
+                    <td class="dark" id="61">61</td>
+                    <td class="light" id="62">62</td>
+                    <td class="dark" id="63">63</td>
+                    <td class="light" id="64">64</td>
+                    <td class="dark" id="65">65</td>
+                    <td class="light" id="66">66</td>
+                    <td class="dark" id="67">67</td>
+                </tr>
+                <tr>
+
+                    <td class="dark" id="70">70</td>
+                    <td class="light" id="71">71</td>
+                    <td class="dark" id="72">72</td>
+                    <td class="light" id="73">73</td>
+                    <td class="dark" id="74">74</td>
+                    <td class="light" id="75">75</td>
+                    <td class="dark" id="76">76</td>
+                    <td class="light" id="77">77</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br>
+        <div class="input-group mb-3" style="width: 40%;">
+
+            <input type="text" class="form-control" placeholder="Input Position" aria-label="Recipient's username"
+                aria-describedby="button-addon2" id="p">
+            <button class="btn btn-outline-secondary" type="button" id="searchbutton"
+                onclick="position()">Submit</button>
+            <button class="btn btn-outline-secondary" type="button" onclick="window.location.reload()">Reload</button>
+
+
+        </div>
+    </div>
+
+
+
+    <script src="/index.js"></script>
+
+</body>
+
+</html>
